@@ -7,7 +7,6 @@ const addData = async (db, payload) => {
     const categoryId = payload.id ? payload.id : uuid.v4();
     await db.collection('categories').doc(categoryId)
         .set({
-            id: categoryId,
             name: payload.name
         })
         .then(() => {
