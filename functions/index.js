@@ -16,7 +16,6 @@ const {
 admin.initializeApp();
 
 const db = admin.firestore();
-const regionalFunctions = functions.region('asia-northeast1');
 
 app.get('/v1/categories/:category_id', async (req, res) => {
     const categoryId = req.params.category_id;
@@ -66,4 +65,4 @@ app.post('/v1/categories', async (req, res) => {
 
 });
 
-exports.api = regionalFunctions.https.onRequest(app);
+exports.api = functions.https.onRequest(app);
