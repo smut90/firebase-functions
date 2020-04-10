@@ -1,0 +1,33 @@
+{
+  "categories": [
+    {
+      "id": "random_id",
+      "name": "Grammer point test",
+      "grammerlets": [
+        {
+          "id": "random_id",
+          "active": true,
+          "description": "description",
+          "examples": [
+            {
+              "id": "01",
+              "item": "For male..."
+            }
+          ],
+          "name": "Adjectives",
+          "practice": [
+            {
+              "answers": [
+                "heureuse",
+                "heureux"
+              ],
+              "hint": "hint",
+              "id": "01",
+              "question": "La fill est**"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
